@@ -1,37 +1,39 @@
-var name_of_guest_array = [];
-function submit(){
-var Guest_name = document.getElementById("Enter_name").value;
-name_of_guest_array.push(Guest_name);
-document.getElementById("Display_names").innerHTML = name_of_guest_array;
-console.log(name_of_guest_array);
-var length_of_array = name_of_guest_array.length;
-console.log(length_of_array);
-}
+canvas = document.getElementById("myCanvas");
+ctx= canvas.getContext("2d");
 
-function Show_list(){
-    var i=name_of_guest_array.join("<br>");
-    console.log(name_of_guest_array);
-    document.getElementById("Show_names").innerHTML = i.toString();
-}
 
-function sorting(){
-    name_of_guest_array.sort();
-    var i=name_of_guest_array.join("<br>");
-    console.log(name_of_guest_array);
-    document.getElementById("Sorted_names").innerHTML = i.toString();
+ctx.beginPath();
+ctx.strokeStyle="grey";
+ctx.lineWidth=1;
+ctx.arc(150,143,430,200,2*Math.PI);
+ctx.stroke();
 
-        
-}
+ctx.beginPath();
+ctx.strokeStyle="blue";
+ctx.lineWidth=5;
+ctx.arc(250,210,40,0,2*Math.PI);
+ctx.stroke();
 
-function Search(){
-    var s= document.getElementById("Search_name").value;
-    var found= 0;
-    var j;
-    for (j=0; j<name_of_guest_array.length; j++){
-        if(s==name_of_guest_array[j]){
-            found=found+1;
-        }
-    }
-    document.getElementById("Search_names").innerHTML = "Name found"+found+"Time/s";
-    console.log("Found Name "+found+" Time/s ")
-    }
+ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.lineWidth=5;
+ctx.arc(350,210,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="red";
+ctx.lineWidth=5;
+ctx.arc(450,210,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="yellow";
+ctx.lineWidth=5;
+ctx.arc(300,250,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle="green";
+ctx.lineWidth=5;
+ctx.arc(400,248,40,0,2*Math.PI);
+ctx.stroke();

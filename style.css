@@ -1,23 +1,17 @@
-input{
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 200px;
-    border: solid;
-    font-weight: bold;
+h1
+{
+	color: red; 
+	font-size: 40px;
+}
+.body_background {
+	background-image: url("bg1.jpg");
+	background-position: center;
+	background-size: cover;
 }
 
-button{
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-hr{
-    margin-bottom: 15px;
-}
-body{
-    text-align: center;
-}
-h1{
-    margin-bottom: 30px;
-    text-decoration: underline;
+#myCanvas{
+	border-width: 10px;
+	background-color: white;
+	border-style: ridge;
 
 }
